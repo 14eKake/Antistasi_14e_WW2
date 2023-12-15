@@ -1,0 +1,113 @@
+
+///////////////////////////////////////
+//			Troupe d'élite			 //
+///////////////////////////////////////
+
+private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;			// Touche pas à ca petit con!!!!!
+_sfLoadoutData set ["uniforms", ["U_LIB_GER_MG_schutze"]];					//Uniforme --> Peux en avoir plusieurs 
+_sfLoadoutData set ["vests", ["V_LIB_GER_PioneerVest"]];				    //Gillets --> Peux en avoir plusieurs 
+_sfLoadoutData set ["backpacks", ["B_LIB_GER_Backpack"]];			        //Sac à dos --> Peux en avoir plusieurs 
+_sfLoadoutData set ["helmets", ["H_LIB_GER_Helmet_net_painted"]];		    //Casque  --> Peux en avoir plusieurs 
+
+_sfLoadoutData set ["rifles", [												// Fusil --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MP44", "", "", "", ["LIB_30Rnd_792x33"], [], ""],
+["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57"], [], ""]
+]];
+
+_sfLoadoutData set ["SMGs", [												// SMG  --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19"], [], ""]
+]];
+_sfLoadoutData set ["machineGuns", [										// MG --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MG42", "", "", "", ["LIB_50Rnd_792x57"], [], ""]
+]];
+_sfLoadoutData set ["marksmanRifles", [										// TP --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_K98_ZF39", "", "", "", ["LIB_5Rnd_792x57"], [], ""]
+]];
+
+/////////////////////////////////
+//			Militaire   	    //
+/////////////////////////////////
+
+private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;		// Touche pas à ca petit con!!!!!
+_militaryLoadoutData set ["uniforms", ["U_LIB_GER_MG_schutze",]];		
+_militaryLoadoutData set ["vests", ["V_LIB_GER_PioneerVest"]];		
+_militaryLoadoutData set ["backpacks", ["B_LIB_GER_Backpack"]];		
+_militaryLoadoutData set ["helmets", ["H_LIB_GER_Helmet_net_painted"]];
+
+_militaryLoadoutData set["rifles", [										// Fusil --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MP44", "", "", "", ["LIB_30Rnd_792x33"], [], ""],
+["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57"], [], ""]
+]];
+
+_militaryLoadoutData set ["SMGs", [											// SMG  --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19"], [], ""]
+]];
+_militaryLoadoutData set ["machineGuns", [									// MG --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_MG42", "", "", "", ["LIB_50Rnd_792x57"], [], ""]
+]];
+_militaryLoadoutData set ["marksmanRifles", [								// TP --> Peux en avoir plusieurs -> ["Classe de l'arme", "Cannon", "Viseur", "*Ne sais pas*", ["Classe Munitions"], [], "Poignée"],
+["LIB_K98_ZF39", "", "", "", ["LIB_5Rnd_792x57"], [], ""]
+]];
+///////////////////////////////
+//			Police		     //
+///////////////////////////////
+
+private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+_policeLoadoutData set ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
+_policeLoadoutData set ["vests", ["V_TacVest_blk_POLICE"]];
+_policeLoadoutData set ["helmets", ["H_Cap_police"]];
+_policeLoadoutData set ["SMGs", [
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Holosight", [], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Yorris", [], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""],
+["SMG_03C_TR_black", "", "acc_flashlight", "optic_Holosight_blk_F", [], [], ""],
+["SMG_03C_TR_black", "", "acc_flashlight", "optic_Yorris", [], [], ""],
+["SMG_03C_TR_black", "", "acc_flashlight", "optic_Aco_smg", [], [], ""],
+["SMG_02_F", "", "acc_flashlight", "optic_Holosight_blk_F", [], [], ""],
+["SMG_02_F", "", "acc_flashlight", "optic_Yorris", [], [], ""],
+["SMG_02_F", "", "acc_flashlight", "optic_Aco_smg", [], [], ""]
+]];
+////////////////////////////////
+//       Millice	 	      //
+////////////////////////////////
+
+private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+_militiaLoadoutData set ["uniforms", ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve"]];		
+_militiaLoadoutData set ["vests", ["V_BandollierB_oli", "V_Chestrig_oli"]];							
+_militiaLoadoutData set ["Hvests", ["V_TacVest_oli"]];
+_militiaLoadoutData set ["backpacks", ["B_TacticalPack_oli", "B_FieldPack_oli", "B_AssaultPack_dgtl"]];	
+_militiaLoadoutData set ["helmets", ["H_MilCap_dgtl", "H_HelmetIA"]];	
+
+_militiaLoadoutData set ["rifles", [
+["arifle_Mk20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], [], ""],
+["arifle_TRG21_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], [], ""]
+]];
+_militiaLoadoutData set ["carbines", [
+["arifle_Mk20C_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], [], ""],
+["arifle_TRG20_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], [], ""]
+]];
+_militiaLoadoutData set ["grenadeLaunchers", [
+["arifle_Mk20_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["arifle_TRG21_GL_F", "", "", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+]];
+_militiaLoadoutData set ["SMGs", ["SMG_01_F", "SMG_02_F", "SMG_03_black", "SMG_03C_black"]];
+_militiaLoadoutData set ["machineGuns", [
+["LMG_Mk200_F", "", "", "", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_03_f_blk"]
+]];
+_militiaLoadoutData set ["marksmanRifles", [["srifle_EBR_F", "", "", "optic_MRCO", [], [], ""] ]];
+_militiaLoadoutData set ["sniperRifles", [["srifle_EBR_F", "", "", "optic_SOS", [], [], ""] ]];
+
+//////////////////////////
+//    Misc Loadouts     //
+//////////////////////////
+//Equipage
+private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+_crewLoadoutData set ["uniforms", ["U_Tank_green_F"]];			
+_crewLoadoutData set ["vests", ["V_BandollierB_oli"]];			
+_crewLoadoutData set ["helmets", ["H_HelmetCrew_I"]];			
+
+//Pilotes
+private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
+_pilotLoadoutData set ["uniforms", ["U_I_HeliPilotCoveralls"]];			
+_pilotLoadoutData set ["vests", ["V_TacVest_oli"]];										
+_pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_I", "H_CrewHelmetHeli_I"]];		
